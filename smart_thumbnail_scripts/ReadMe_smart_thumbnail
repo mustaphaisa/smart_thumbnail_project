@@ -1,0 +1,38 @@
+ReadMe For Smart-Thumbnails MATLAB Program
+===============================================
+
+Unzip the file smart_thumbnail.zip
+The folder should contain all supporting code and images. The main MATLAB function
+that takes in the name of the digital image to be processed is called thumbnail. 
+It has one parameter which is the name of the image to be processed. Users are 
+prompted for the name of images when the program is run. For simple testing, use 
+the images in our package or else import others into directory.
+
+The algorithm then passes the image matrix through each of the follwing priorities:
+getSizeMatrix(image) 
+getColorMatrix(image) 
+getLocationMatrix(image) 
+getDistinctMatrix(image, no of passes) 
+getBrightnessMatrix(image, weight) 
+faceDetectionMatrix(image, weight) 
+bodyDetectionMatrix(image, weight) 
+
+Test Images
+===========
+'woman.jpg'
+'balloon.jpg'
+'balloon.png'
+'Lena.jpg'
+'background.jpg'
+'party.jpg'
+'room.jpg'
+'car.jpg'
+'woman.jpg'
+'dinner.jpg'
+'fruit.jpg'
+'crowd.jpg'
+'moon.jpg'
+'tsquare.jpg'
+'mountain.jpg'
+'woman.jpg'
+'bike.jpg'
