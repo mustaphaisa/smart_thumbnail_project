@@ -1,3 +1,5 @@
+% This script was written by Mustapha Isa 
+
 % This script makes the combination of all the images 
 
 % Prompts for user input

@@ -1,3 +1,5 @@
+% This script was written by Mustapha Isa 
+
 function makeSmarter( img, name, setNum, showPlot )
 
 % This script makes the combination of all the images 
@@ -44,29 +46,29 @@ Result = uint64(A).*uint64(C).*uint64(E).*uint64(F).*uint64(G);
 Max = max(Result(:));
 [r,c] = find(Result==Max);
 
+h = figure('visible', 'off'), imshow(TestImage);
+hold on;
+plot(c,r,'r+');
+axis([1, n, 1, m]); 
+
 if(showPlot == 1 )
     
     % Finds the Minimum points
     Min = min(Result(:));
-    [x,y] = find(Result==(Min));
-    figure,imshow(TestImage);
+    [x,y] = find(Result==(Min));  
     hold on;
     
     % Creates a plot for the maximum and minimum values
     plot(y,x,'b+');
     axis([1, n, 1, m]);
-    plot(c,r,'r+');
-    axis([1, n, 1, m]); 
-    
+  
 end
-
 
 % Saving the original 
 filename = strcat('../Test_Images/', name );
 filename = strcat( filename, '_original' );
 filename = strcat( filename, '.jpg' );
-imwrite( TestImage, filename );
-hold off;
+saveas( h, filename );
 
 % This crops the image 
 autoCrop(TestImage,r,c,name);

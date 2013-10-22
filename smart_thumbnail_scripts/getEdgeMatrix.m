@@ -1,3 +1,5 @@
+% This script was written by Joshua Horrowitz
+
 % getEdge(I)
 % This function will take in an image and run Canny edge detection on the
 % image. For every pixel that is an edge (a logical 1) it will increase the

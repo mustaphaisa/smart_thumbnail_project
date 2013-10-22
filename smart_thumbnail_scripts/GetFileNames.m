@@ -2,7 +2,7 @@
 
 % This returns a vector of structures with information 
 % about the images contained in the image set.
-function fileNames = GetFileNames( dataset )
+function fileNames = getFileNames( dataset )
 
 if dataset == 1
     files = dir('../Data Set 1');
@@ -15,9 +15,6 @@ fileNames = {files.name};
 
 % This eliminates the file extensions 
 fileNames(strmatch('.',fileNames))=[];
-
-% Returns the vector of file names
-fileNames;
 
 end
 

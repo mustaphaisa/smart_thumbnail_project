@@ -1,3 +1,5 @@
+% This script was written by Mustapha Isa 
+
 function mat = getLocationMatrix2(img)
 % This function returns a matirx containing ranks that prioritize
 % regions in an image based on distance from the center.

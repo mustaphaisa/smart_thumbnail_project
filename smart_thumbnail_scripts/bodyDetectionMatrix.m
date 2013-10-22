@@ -1,3 +1,5 @@
+% This script was written by Mustapha Isa 
+
 function mask = bodyDetectionMatrix(img, val)
 % This mask generates an anking that gives all bodeis in the image 3
 % times the priority of others

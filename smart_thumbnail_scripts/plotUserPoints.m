@@ -1,3 +1,5 @@
+% This script was written by Mustapha Isa 
+
 % Using the input from user testing to plot all three levels
 % ROIs per user by color
 function A = plotUserPoints

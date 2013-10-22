@@ -10,6 +10,7 @@ mat = ones(x,y);
 % Convert the rgb to an hsv image, which gives brightness values
 bright = rgb2hsv(im);
 illum = (bright(:,:,3));
+
 % Identify the max brightness values
 Max = max(illum(:));
 

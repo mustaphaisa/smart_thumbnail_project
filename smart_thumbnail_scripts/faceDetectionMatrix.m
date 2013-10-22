@@ -1,3 +1,5 @@
+% This script was written by Mustapha Isa 
+
 function mask = faceDetectionMatrix(img, val)
 % This function creates a matrix of with a mask of prioritized regions
 % based on face detection.

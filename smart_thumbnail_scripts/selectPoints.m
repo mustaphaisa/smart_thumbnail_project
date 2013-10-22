@@ -1,3 +1,6 @@
+% This script was initially written by Kelsey Lafer
+% This script was edited by Mustapha Isa 
+
 % This selects points on the image that the user finds valid
 function points = selectPoints(im)
 
