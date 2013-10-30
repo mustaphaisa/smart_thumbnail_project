@@ -1,3 +1,5 @@
+%This function was written by Mustapha
+
 % This script makes the combination of all the images 
 
 % Prompts for user input

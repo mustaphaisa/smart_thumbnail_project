@@ -1,3 +1,5 @@
+%This function was written by Mustapha
+
 function makeSmarter( img, name, setNum, showPlot )
 
 % This script makes the combination of all the images 
@@ -44,6 +46,13 @@ Result = uint64(A).*uint64(C).*uint64(E).*uint64(F).*uint64(G);
 Max = max(Result(:));
 [r,c] = find(Result==Max);
 
+h = figure; 
+set(h,'visible','off');
+imshow(TestImage);
+hold on;
+plot(c,r,'r+');
+axis([1, n, 1, m]);
+
 if(showPlot == 1 )
     
     % Finds the Minimum points
@@ -60,12 +69,11 @@ if(showPlot == 1 )
     
 end
 
-
 % Saving the original 
 filename = strcat('../Test_Images/', name );
 filename = strcat( filename, '_original' );
 filename = strcat( filename, '.jpg' );
-imwrite( TestImage, filename );
+saveas(h, filename);
 hold off;
 
 % This crops the image 

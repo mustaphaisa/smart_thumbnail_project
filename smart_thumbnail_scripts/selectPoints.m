@@ -1,3 +1,7 @@
+%This function was written by Kelsey
+%Edited by Mustapha
+
+
 % This selects points on the image that the user finds valid
 function points = selectPoints(im)
 

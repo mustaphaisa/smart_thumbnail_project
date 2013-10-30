@@ -1,3 +1,5 @@
+% This code is written by Kelsey
+
 function BW = getSizeMatrix(img)
 % getSizeMatrix takes as input an image. 
 % Ouput BW, a priority mask that prioritizes connected components with

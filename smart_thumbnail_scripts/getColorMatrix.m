@@ -1,3 +1,5 @@
+% This code is written by Kelsey
+
 function BW = getColorMatrix(im)
 % Take as input an image. Create a color mask. The image is labelled
 % by finding unique values to represent each RGB value. The RGB valued
