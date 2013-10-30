@@ -1,5 +1,3 @@
-% This script was written by Mustapha Isa 
-
 function autoCrop(img, x, y, name)
 % Crops an image to a 4th of its size based on vectores x and y that define
 % points of interests
